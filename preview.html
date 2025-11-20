@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ClassPass — Preview Material</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --brand:#1f7a8c; --brandDark:#155763; }
+    body { font-family: Inter, sans-serif; }
+    .card { box-shadow: 0 10px 25px rgba(0,0,0,.06); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="h-8 w-8 rounded-lg bg-[color:var(--brand)]"></div>
+        <span class="font-semibold text-lg">ClassPass Armenia</span>
+      </a>
+      <a href="index.html#search" class="px-3 py-1.5 rounded-lg bg-[color:var(--brand)] text-white text-sm">Back</a>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-10 grid lg:grid-cols-3 gap-8">
+
+    <!-- Left Column (Details) -->
+    <div class="lg:col-span-1 bg-white border border-slate-200 rounded-2xl p-6 card">
+      <h2 class="text-xl font-bold">Assignment 3 – Arrays & Complexity</h2>
+      <p class="text-sm text-slate-500 mt-1">AUA • CS 110 • Prof. Hakobyan • Fall 2024</p>
+
+      <ul class="mt-6 space-y-3 text-sm text-slate-700">
+        <li>• File type: PDF</li>
+        <li>• Size: 1.2 MB</li>
+        <li>• Pages: 6</li>
+        <li>• Uploaded by: <span class="font-medium">Verified Student</span></li>
+      </ul>
+
+      <div class="mt-6">
+        <button class="w-full px-4 py-2 rounded-xl bg-[color:var(--brand)] text-white hover:bg-[color:var(--brandDark)]">
+          Unlock (2 credits)
+        </button>
+        <button class="w-full mt-3 px-4 py-2 rounded-xl border border-slate-300 hover:bg-slate-100 text-sm">
+          Report Issue
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Column (Preview Window) -->
+    <div class="lg:col-span-2 bg-white border border-slate-200 rounded-2xl p-6 card">
+      <h3 class="font-semibold text-lg mb-3">Preview</h3>
+      <div class="border border-slate-300 rounded-lg h-[70vh] flex items-center justify-center bg-slate-100 text-slate-500 text-sm">
+        PDF Preview Mock (No backend)
+      </div>
+
+      <div class="mt-4 flex gap-3">
+        <button class="px-4 py-2 rounded-xl bg-slate-900 text-white text-sm">Download PDF</button>
+        <button class="px-4 py-2 rounded-xl border border-slate-300 text-sm">Open Fullscreen</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

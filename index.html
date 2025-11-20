@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ClassPass Armenia — Mock Prototype</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --brand:#1f7a8c; --brandDark:#155763; --accent:#ffb703; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
+    .glass { background: rgba(255,255,255,.6); backdrop-filter: blur(10px); }
+    .card { box-shadow: 0 10px 25px rgba(0,0,0,.06); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="h-9 w-9 rounded-xl bg-[color:var(--brand)]"></div>
+        <span class="font-semibold text-lg">ClassPass Armenia</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#search" class="hover:text-[color:var(--brand)]">Search</a>
+        <a href="#pricing" class="hover:text-[color:var(--brand)]">Pricing</a>
+        <a href="#rewards" class="hover:text-[color:var(--brand)]">Rewards</a>
+        <a href="#how" class="hover:text-[color:var(--brand)]">How it works</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button id="openUpload" class="hidden sm:inline-flex px-3 py-2 rounded-xl border border-slate-300 hover:bg-slate-100 text-sm">Upload</button>
+        <a href="#search" class="inline-flex px-3 py-2 rounded-xl bg-[color:var(--brand)] text-white hover:bg-[color:var(--brandDark)] text-sm">Try Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[color:var(--brand)]/10 via-transparent to-[color:var(--accent)]/10"></div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 relative">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+            Find verified study materials for your Armenian university — fast.
+          </h1>
+          <p class="mt-4 text-slate-600 text-lg">
+            Organized by university, course, professor, and semester. Pay with credits or affordable AMD micro-payments.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#search" class="px-4 py-2.5 rounded-xl bg-[color:var(--brand)] text-white hover:bg-[color:var(--brandDark)]">Start Searching</a>
+            <button id="openUpload2" class="px-4 py-2.5 rounded-xl border border-slate-300 hover:bg-white">Upload Material</button>
+          </div>
+          <div class="mt-6 text-sm text-slate-600">
+            Supported: AUA, YSU, Polytechnic — local payments (Idram, ArCa), Coffee House rewards.
+          </div>
+        </div>
+        <div class="lg:pl-8">
+          <div class="glass rounded-2xl p-4 border border-white/50 card">
+            <div class="bg-white rounded-xl p-4 border border-slate-200">
+              <div class="flex items-center gap-3 mb-4">
+                <div class="h-9 w-9 rounded-lg bg-[color:var(--brand)]/90"></div>
+                <div>
+                  <div class="font-semibold">Demo Result</div>
+                  <div class="text-xs text-slate-500">AUA • CS 110 • Fall 2024</div>
+                </div>
+              </div>
+              <ul class="text-sm space-y-2">
+                <li class="flex justify-between"><span>Assignment 3 – Arrays & Complexity</span><span class="text-slate-500">PDF • 1.2MB</span></li>
+                <li class="flex justify-between"><span>Midterm Review – Slides & Cheatsheet</span><span class="text-slate-500">PPTX • 4.7MB</span></li>
+                <li class="flex justify-between"><span>Past Exam – Prof. Hakobyan (2023)</span><span class="text-slate-500">PDF • 980KB</span></li>
+              </ul>
+              <div class="mt-4 flex gap-3">
+                <button class="px-3 py-2 rounded-lg bg-slate-900 text-white text-sm">Preview</button>
+                <button class="px-3 py-2 rounded-lg border border-slate-300 text-sm">Unlock (2 credits)</button>
+              </div>
+            </div>
+            <p class="mt-3 text-center text-xs text-slate-500">Mock preview — no backend required.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
